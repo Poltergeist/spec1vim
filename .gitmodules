@@ -13,3 +13,6 @@
 [submodule "bundle/vim-coffe-script"]
 	path = bundle/vim-coffe-script
 	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = https://github.com/tpope/vim-surround
