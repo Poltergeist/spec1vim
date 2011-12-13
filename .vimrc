@@ -3,12 +3,21 @@ call pathogen#helptags()
 syntax on
 :set number
 :filetype plugin on
-autocmd FileType php noremap <C-S-K> :!phpcs --standard=skin %<CR>
 :set ff=unix
 :set cursorline
 :filetype plugin indent on
 :set ai
 :set mouse=a
+:set nobackup
+:set nowritebackup
+:set noswapfile
+
+" Autocmd for PHP
+autocmd FileType php noremap <C-S-K> :!phpcs --standard=skin %<CR>
+
+" Autocmd for CoffeeScript
+au BufNewFile,BufReadPost *.coffee setl foldmethod=indent
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
 "Mappings
 "added mapleader to ,
