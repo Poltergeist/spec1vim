@@ -11,6 +11,7 @@ syntax on
 :set nobackup
 :set nowritebackup
 :set noswapfile
+:set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " Autocmd for PHP
 autocmd FileType php noremap <C-S-K> :!phpcs --standard=skin %<CR>
