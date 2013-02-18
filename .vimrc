@@ -12,12 +12,15 @@ syntax on
 :set nowritebackup
 :set noswapfile
 :set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+:set listchars=eol:$,tab:\|\ ,trail:~,extends:>,precedes:<
+:set list
 
 " Autocmd for PHP
 autocmd FileType php noremap <C-S-K> :!phpcs --standard=skin %<CR>
 
 " Autocmd to remove whitespaces on :w
 autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePre * :set tabstop=4 | :%retab! | :set tabstop=8
 
 " Autocmd for CoffeeScript
 " au BufNewFile,BufReadPost *.coffee setl foldmethod=indent
