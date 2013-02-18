@@ -26,7 +26,7 @@ plugins=(git osx ruby brew npm node)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/philipphinrichsen/.rvm/gems/ruby-1.9.2-p136/bin:/Users/philipphinrichsen/.rvm/gems/ruby-1.9.2-p136/bin:/Users/philipphinrichsen/.rvm/gems/ruby-1.9.2-p136@global/bin:/Users/philipphinrichsen/.rvm/rubies/ruby-1.9.2-p136/bin:/Users/philipphinrichsen/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/usr/texbin:/usr/X11/bin
+export PATH=/Users/philipphinrichsen/.rvm/gems/ruby-1.9.2-p136/bin:/Users/philipphinrichsen/.rvm/gems/ruby-1.9.2-p136/bin:/Users/philipphinrichsen/.rvm/gems/ruby-1.9.2-p136@global/bin:/Users/philipphinrichsen/.rvm/rubies/ruby-1.9.2-p136/bin:/Users/philipphinrichsen/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/usr/texbin:/usr/X11/bin:/usr/local/sbin
 
 
 #Aliasses
