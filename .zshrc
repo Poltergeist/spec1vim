@@ -26,15 +26,16 @@ plugins=(git osx ruby brew npm node)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/philipphinrichsen/.rvm/gems/ruby-1.9.2-p136/bin:/Users/philipphinrichsen/.rvm/gems/ruby-1.9.2-p136/bin:/Users/philipphinrichsen/.rvm/gems/ruby-1.9.2-p136@global/bin:/Users/philipphinrichsen/.rvm/rubies/ruby-1.9.2-p136/bin:/Users/philipphinrichsen/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/usr/texbin:/usr/X11/bin:/usr/local/sbin:/usr/local/share/npm/bin
+export PATH=/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/usr/texbin:/usr/X11/bin:/usr/local/sbin:/usr/local/share/npm/bin
 
 
 #Aliasses
 alias snipdocsapi=cd Sites/snipdocs && source bin/activate && cd snipdocs && python manage.py runserver
 
 alias snipdocsapp=cd Dropbox/snipdocs && hem server
-alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
-alias macvim="open /Applications/Macvim.app"
-alias aenv="source bin/activate && cd snipdocs"
+alias vim="$HOME/Applications/MacVim.app/Contents/MacOS/Vim"
+alias macvim="open $HOME/Applications/Macvim.app"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

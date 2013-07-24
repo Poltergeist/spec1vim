@@ -14,6 +14,9 @@ syntax on
 :set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 :set listchars=tab:\|\ ,trail:~
 :set list
+set tabstop=2
+set shiftwidth=2
+set expandtab
 
 " Autocmd for PHP
 autocmd FileType php noremap <C-S-K> :!phpcs --standard=skin %<CR>
@@ -49,3 +52,28 @@ map <C-l> <C-W>l
 map <right> :bn<cr>
 map <left> :bp<cr>
 colorscheme railscasts
+
+"JSLINT
+filetype plugin on
+let g:JSHintHighlightErrorLine = 1
+
+
+" Highlight too long lines
+nnoremap <Leader>H :call<SID>LongLineHLToggle()<cr>
+hi OverLength ctermbg=none cterm=none
+match OverLength /\%>80v/
+fun! s:LongLineHLToggle()
+ if !exists('w:longlinehl')
+  let w:longlinehl = matchadd('ErrorMsg', '.\%>80v', 0)
+  echo "Long lines highlighted"
+ else
+  call matchdelete(w:longlinehl)
+  unl w:longlinehl
+  echo "Long lines unhighlighted"
+ endif
+endfunction
+
+function! Inc(x)
+    let a:x[0] += 1
+    return a:x[0]
+endfunction
