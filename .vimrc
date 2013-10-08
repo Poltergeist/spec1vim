@@ -42,6 +42,9 @@ autocmd InsertLeave * :set relativenumber
 "added mapleader to ,
 :let mapleader = ","
 
+"CTRLP config
+let g:ctrlp_map = '<c-p>'
+
 " Map Ctrl N to NerdTree
 map <C-n> <esc>:NERDTreeToggle<enter>
 
