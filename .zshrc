@@ -35,6 +35,7 @@ alias snipdocsapi=cd Sites/snipdocs && source bin/activate && cd snipdocs && pyt
 alias snipdocsapp=cd Dropbox/snipdocs && hem server
 alias vim="$HOME/Applications/MacVim.app/Contents/MacOS/Vim"
 alias macvim="open $HOME/Applications/Macvim.app"
+alias fish="/usr/local/bin/fish"
 
 # PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # rbenv

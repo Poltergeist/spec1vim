@@ -1,9 +1,9 @@
 call pathogen#infect()
 call pathogen#helptags()
 syntax on
-:set number
 :filetype plugin on
 :set ff=unix
+:set relativenumber
 :set cursorline
 :filetype plugin indent on
 :set ai
@@ -33,6 +33,10 @@ au BufNewFile,BufReadPost *.coffee setl tabstop=2
 au BufNewFile,BufReadPost *.styl set filetype=css
 au BufNewFile,BufReadPost *.jeco set filetype=html
 au BufNewFile,BufReadPost *.eco set filetype=html
+
+"use relative numbers in normal
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
 
 "Mappings
 "added mapleader to ,

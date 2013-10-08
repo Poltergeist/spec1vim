@@ -37,3 +37,9 @@
 [submodule "bundle/jshint"]
 	path = bundle/jshint
 	url = git@github.com:wookiehangover/jshint.vim.git
+[submodule "bundle/vim-jsdoc"]
+	path = bundle/vim-jsdoc
+	url = git@github.com:heavenshell/vim-jsdoc.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = git@github.com:kien/ctrlp.vim.git
