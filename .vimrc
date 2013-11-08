@@ -61,8 +61,10 @@ map <left> :bp<cr>
 colorscheme railscasts
 
 "JSLINT
-filetype plugin on
-let g:JSHintHighlightErrorLine = 1
+"filetype plugin on
+"let g:JSHintHighlightErrorLine = 1
+
+let g:syntastic_javascript_checkers = [ 'gjslint' ]
 
 
 " Highlight too long lines
@@ -84,3 +86,4 @@ function! Inc(x)
     let a:x[0] += 1
     return a:x[0]
 endfunction
+
