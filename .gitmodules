@@ -27,7 +27,7 @@
 	url = https://github.com/vim-scripts/Figlet.vim.git
 [submodule "bundle/zencoding"]
 	path = bundle/zencoding
-	url = https://github.com/mattn/zencoding-vim.git
+	url = https://github.com/mattn/emmet-vim
 [submodule "bundle/vim-jade"]
 	path = bundle/vim-jade
 	url = git://github.com/digitaltoad/vim-jade.git
@@ -49,3 +49,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/emmet"]
+	path = bundle/emmet
+	url = https://github.com/mattn/emmet-vim
