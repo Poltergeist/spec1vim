@@ -64,7 +64,7 @@ colorscheme railscasts
 "filetype plugin on
 "let g:JSHintHighlightErrorLine = 1
 
-let g:syntastic_javascript_checkers = [ 'gjslint' ]
+let g:syntastic_javascript_checkers = [ 'jshint' ]
 
 
 " Highlight too long lines

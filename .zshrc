@@ -40,3 +40,7 @@ alias fish="/usr/local/bin/fish"
 # PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+__git_files () {
+    _wanted files expl 'local files' _files
+  }
