@@ -37,6 +37,8 @@ alias vim="$HOME/Applications/MacVim.app/Contents/MacOS/Vim"
 alias macvim="open $HOME/Applications/Macvim.app"
 alias fish="/usr/local/bin/fish"
 
+hash -d pr=~/projects/
+
 # PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

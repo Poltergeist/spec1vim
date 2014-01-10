@@ -23,6 +23,7 @@ autocmd FileType php noremap <C-S-K> :!phpcs --standard=skin %<CR>
 
 " Autocmd to remove whitespaces on :w
 autocmd BufWritePre * :%s/\s\+$//e
+
 "autocmd BufWritePre * :set tabstop=4 | :%retab! | :set tabstop=8
 
 " Autocmd for CoffeeScript
@@ -65,6 +66,10 @@ colorscheme railscasts
 "let g:JSHintHighlightErrorLine = 1
 
 let g:syntastic_javascript_checkers = [ 'jshint' ]
+
+
+" Autocmd to lint on save
+autocmd BufWritePre *.js :Errors
 
 
 " Highlight too long lines
