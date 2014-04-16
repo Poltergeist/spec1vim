@@ -12,7 +12,7 @@ syntax on
 :set nowritebackup
 :set noswapfile
 :set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
-:set listchars=tab:\|\ ,trail:~
+:set listchars=tab:\|\ ,trail:~,nbsp:☠
 :set list
 set tabstop=2
 set shiftwidth=2
