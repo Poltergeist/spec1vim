@@ -1,7 +1,7 @@
 call pathogen#infect()
 call pathogen#helptags()
-syntax on
 :filetype plugin on
+syntax on
 :set ff=unix
 :set relativenumber
 :set cursorline
@@ -91,4 +91,3 @@ function! Inc(x)
     let a:x[0] += 1
     return a:x[0]
 endfunction
-

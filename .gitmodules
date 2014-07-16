@@ -49,3 +49,6 @@
 [submodule "bundle/emmet"]
 	path = bundle/emmet
 	url = https://github.com/mattn/emmet-vim
+[submodule "bundle/csv"]
+	path = bundle/csv
+	url = git@github.com:chrisbra/csv.vim.git

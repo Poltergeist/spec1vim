@@ -26,16 +26,13 @@ plugins=(git osx ruby brew npm node)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/usr/texbin:/usr/X11/bin:/usr/local/sbin:/usr/local/share/npm/bin:./node_modules/.bin:/usr/local/share/python
+export PATH=/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/usr/texbin:/usr/X11/bin:/usr/local/sbin:/usr/local/share/npm/bin:./node_modules/.bin
 
 
 #Aliasses
-alias snipdocsapi=cd Sites/snipdocs && source bin/activate && cd snipdocs && python manage.py runserver
 source $(brew --prefix nvm)/nvm.sh
 
-alias snipdocsapp=cd Dropbox/snipdocs && hem server
 alias vim="$HOME/Applications/MacVim.app/Contents/MacOS/Vim"
-alias macvim="open $HOME/Applications/Macvim.app"
 alias fish="/usr/local/bin/fish"
 
 hash -d pr=~/projects/
