@@ -26,7 +26,7 @@ plugins=(git osx ruby brew npm node)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/usr/texbin:/usr/X11/bin:/usr/local/sbin:/usr/local/share/npm/bin:./node_modules/.bin
+export PATH=/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/usr/texbin:/usr/X11/bin:/usr/local/sbin:/usr/local/share/npm/bin:./node_modules/.bin:/usr/local/opt/nvm/v0.10.31/bin/
 
 
 #Aliasses
@@ -47,3 +47,8 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 __git_files () {
     _wanted files expl 'local files' _files
   }
+
+
+[[ -r /usr/local/etc/bash_completion.d ]] && . /usr/local/etc/bash_completion.d
+
+ulimit -n 10000
