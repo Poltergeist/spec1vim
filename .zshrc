@@ -32,7 +32,7 @@ export PATH=/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/usr/tex
 #Aliasses
 source $(brew --prefix nvm)/nvm.sh
 
-alias vim="$HOME/Applications/MacVim.app/Contents/MacOS/Vim"
+alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 alias fish="/usr/local/bin/fish"
 
 hash -d pr=~/projects/
