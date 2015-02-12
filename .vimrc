@@ -66,6 +66,9 @@ map <C-l> <C-W>l
 " Arrows for switching Buffers
 map <right> :bn<cr>
 map <left> :bp<cr>
+nmap <space> zz
+nmap n nzz
+nmap N Nzz
 colorscheme railscasts
 
 "JSLINT
