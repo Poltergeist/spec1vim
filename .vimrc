@@ -70,12 +70,20 @@ nmap <space> zz
 nmap n nzz
 nmap N Nzz
 colorscheme railscasts
+"camelCaseMotion mapping to default w b e keys
+map <silent> w <Plug>CamelCaseMotion_w
+map <silent> b <Plug>CamelCaseMotion_b
+map <silent> e <Plug>CamelCaseMotion_e
+sunmap w
+sunmap b
+sunmap e
+
 
 "JSLINT
 "filetype plugin on
 "let g:JSHintHighlightErrorLine = 1
 
-let g:syntastic_javascript_checkers = [ 'jshint' ]
+let g:syntastic_javascript_checkers = [ 'eslint' ]
 
 
 " Autocmd to lint on save

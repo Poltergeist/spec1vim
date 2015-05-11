@@ -34,6 +34,7 @@ source $(brew --prefix nvm)/nvm.sh
 
 alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 alias fish="/usr/local/bin/fish"
+alias git=hub
 
 hash -d pr=~/projects/
 
